@@ -20,3 +20,6 @@ console.log(y1);
 var str3 = y1 + '年' + mon + "月" + da + "日" + (hou - 5) + "时" + (min - 5) + "分";
 var time = document.querySelector("#time");
 time.innerHTML = str3;
+var apply = document.querySelector("#apply");
+var str4 = year + '-' + mon + "-" + da;
+apply.innerHTML = str4;
