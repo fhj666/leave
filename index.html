@@ -42,7 +42,7 @@
             </li>
             <li>
                 <div class="li_fl">班级:</div>
-                <div class="li_fr">19会计2</div>
+                <div class="li_fr">19会计1</div>
             </li>
             <li>
                 <div class="li_fl">姓名:</div>
@@ -50,7 +50,7 @@
             </li>
             <li>
                 <div class="li_fl">学号: </div>
-                <div class="li_fr">1901020271</div>
+                <div class="li_fr">1901020173</div>
             </li>
             <li>
                 <div class="li_fl">申请日期:</div>
@@ -66,11 +66,11 @@
             </li>
             <li>
                 <div class="li_fl">请假开始时间:</div>
-                <div class="li_fr">2021-10-</div>
+                <div class="li_fr" id="starTime">2021-10-</div>
             </li>
             <li>
                 <div class="li_fl">请假结束时间:</div>
-                <div class="li_fr">2021-10-</div>
+                <div class="li_fr" id="endTime">2021-10-</div>
             </li>
             <li>
                 <div class="li_fl">请假天数: </div>
@@ -97,8 +97,10 @@
                 </div>
                 <div class="li_fr">同意。<br>
                     <i>薛成</i><br>
+                    <span id="time">
+                        21年10月日 15时53分
+                    </span>
 
-                    21年10月日 15时53分
                 </div>
             </li>
             <li>
@@ -141,15 +143,12 @@
         var ui_w = 375;
         // 获取屏幕的宽度
         var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
-        console.log(ui_w, clientWidth);
-
         // 通过js动态改变html根节点字体大小
         var html_ = document.getElementsByTagName('html')[0];
         html_.style.fontSize = (clientWidth / ui_w) * 10 + 'px';
     }
     // window.onresize 浏览器被重置大小执行事件
     window.addEventListener("load", setRem())
-
-
     window.onresize = setRem;
 </script>
+<script src="./js/index.js"></script>
