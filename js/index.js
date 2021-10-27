@@ -1,6 +1,6 @@
 var date = new Date();
 var year = date.getFullYear();//年
-var mon = date.getMonth();//月
+var mon = date.getMonth() + 1;//月
 var da = date.getDate();//日
 var hou = date.getHours();//时
 var min = date.getMinutes();//分
