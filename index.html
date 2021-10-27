@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http- equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生请销假</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fon/iconfont.css">
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <header>
+        <span>&#xe654;</span>
+        <p>学生日常请假</p>
+        <span>&#xe601;</span>
+    </header>
+    <!-- nav部分 -->
+    <div class="nav">
+        <ul>
+            <li>申请单</li>
+            <li>请假附件</li>
+            <li>流转历史</li>
+        </ul>
+    </div>
+    <!-- 内容部分 -->
+    <div class="con">
+        <ul>
+            <li>
+                <div class="li_fl">院系:</div>
+                <div class="li_fr">财政经济学院</div>
+            </li>
+            <li>
+                <div class="li_fl">年级:</div>
+                <div class="li_fr">2019</div>
+            </li>
+            <li>
+                <div class="li_fl">专业:</div>
+                <div class="li_fr">会计</div>
+            </li>
+            <li>
+                <div class="li_fl">班级:</div>
+                <div class="li_fr">19会计2</div>
+            </li>
+            <li>
+                <div class="li_fl">姓名:</div>
+                <div class="li_fr">赵丹丹</div>
+            </li>
+            <li>
+                <div class="li_fl">学号: </div>
+                <div class="li_fr">1901020271</div>
+            </li>
+            <li>
+                <div class="li_fl">申请日期:</div>
+                <div class="li_fr">2021-10</div>
+            </li>
+            <li>
+                <div class="li_fl">联系电话: </div>
+                <div class="li_fr">15103810781</div>
+            </li>
+            <li>
+                <div class="li_fl">请假类型:</div>
+                <div class="li_fr">病假</div>
+            </li>
+            <li>
+                <div class="li_fl">请假开始时间:</div>
+                <div class="li_fr">2021-10-</div>
+            </li>
+            <li>
+                <div class="li_fl">请假结束时间:</div>
+                <div class="li_fr">2021-10-</div>
+            </li>
+            <li>
+                <div class="li_fl">请假天数: </div>
+                <div class="li_fr">1</div>
+            </li>
+            <li>
+                <div class="li_fl">家长是否知道: </div>
+                <div class="li_fr">是</div>
+            </li>
+            <li>
+                <div class="li_fl">家长姓名:</div>
+                <div class="li_fr">范豪杰</div>
+            </li>
+            <li>
+                <div class="li_fl">家长联系电话:</div>
+                <div class="li_fr">15138115712</div>
+            </li>
+            <li>
+                <div class="li_fl">请假事由:</div>
+                <div class="li_fr">因生病，需请假外出，期间无课</div>
+            </li>
+            <li>
+                <div class="li_fl">辅导员审批:
+                </div>
+                <div class="li_fr">同意。<br>
+                    <i>薛成</i><br>
+
+                    21年10月日 15时53分
+                </div>
+            </li>
+            <li>
+                <div class="li_fl">院系审批:</div>
+                <div class="li_fr"></div>
+            </li>
+            <li>
+                <div class="li_fl">学生处审批:</div>
+                <div class="li_fr"></div>
+            </li>
+            <li>
+                <div class="li_fl">校领导审批:</div>
+                <div class="li_fr"></div>
+            </li>
+            <li>
+                <div class="li_fl">学生销假附件:</div>
+                <div class="li_fr">
+                    1. <input type="file">
+                    <a href="javascript:;">增加</a>
+                    <a href="javascript:;">清除</a>
+                </div>
+            </li>
+            <li>
+                <div class="li_fl">学生销假理由:</div>
+                <div class="li_fr">
+                    <textarea name="" id="" cols="25" rows="6"></textarea>
+                </div>
+            </li>
+            <li>
+                <div class="li_fl">辅导员销假意见:</div>
+                <div class="li_fr"></div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+<html>
+<script>
+    function setRem() {
+        var ui_w = 375;
+        // 获取屏幕的宽度
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        console.log(ui_w, clientWidth);
+
+        // 通过js动态改变html根节点字体大小
+        var html_ = document.getElementsByTagName('html')[0];
+        html_.style.fontSize = (clientWidth / ui_w) * 10 + 'px';
+    }
+    // window.onresize 浏览器被重置大小执行事件
+    window.addEventListener("load", setRem())
+
+
+    window.onresize = setRem;
+</script>
